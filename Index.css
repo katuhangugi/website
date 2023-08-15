@@ -1,0 +1,405 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 10;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    background-color: #a4b57e;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: 0px;
+  margin-left: 0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Team Section */
+.team-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.team-section h2 {
+  margin-bottom: 20px;
+}
+
+/* Team Member */
+.team-member {
+  display: inline-block;
+  width: 220px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: white;
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+}
+
+.team-member p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.product-list {
+  padding: 20px;
+  text-align: left;
+}
+
+.product {
+  display: inline-block;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #0f39c1;
+  text-align: center;
+  background-color: rgb(3, 2, 66);
+}
+
+.product img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+/* Additional styles for product types */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.product {
+  flex: 0 0 calc(33.33% - 20px);
+  background-color: rgb(113, 113, 7);
+  border: 1px solid #ccc;
+  padding: 0px;
+  margin: 10px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.product h3 {
+  margin: 10px 0;
+  padding: 20;
+  text-align: center;
+}
+
+.product p {
+  margin: 5px 0;
+}
+
+
+/* Header */
+header {
+  background-color: #d3893f;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Contact */
+.contact {
+  background-color: #3f6955;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #8d5a98;
+  color: rgb(186, 105, 105);
+  padding: 10px 0;
+  text-align: center;
+}
+/* About Us */
+.about {
+  padding: 20px;
+  text-align: center;
+}
+.about h2 {
+  margin-bottom: 10px;
+}
+
+.about p {
+  margin-bottom: 15px;
+}
+
+/* Comment Form */
+.comment-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  margin: 50px;
+}
+
+.comment-form h2 {
+  margin-bottom: 10px;
+  margin: 50px;
+}
+
+.comment-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.comment-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.comment-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* Contact Information */
+.contact-info {
+  padding: 20px;
+  text-align: center;
+  margin: 50px;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+/* Contact Form */
+.comment-form {
+  background-color: #392828;
+  padding: 20px;
+  text-align: center;
+}
+
+.comment-form h2 {
+  margin-bottom: 40px;
+}
+
+.comment-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.comment-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: rgb(235, 94, 94);
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
